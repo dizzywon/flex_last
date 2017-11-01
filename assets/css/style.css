@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+body, .nav_list, .nav_links{
+    margin: 0;
+    padding: 0;
+}
+
+h3, p, .nav_list{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR STARTS HERE */
+header{
+    background: #222;
+    }
+a{
+	cursor: pointer;
+}
+   
+.nav--dark{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.nav_list, .nav_list_links{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav_list{
+    padding: 30px 0;
+}
+
+.nav_list_links a:hover{
+	background: #fff;
+	color: #222;
+}
+
+.nav_links, .navMobile a{
+    color: #fff;
+    line-height: 14px;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+/* NAVBAR ENDS */
+
+/* container*/
+.columns_container {
+    margin: 0 auto;
+    width: 95%;
+    padding: 15px 0;
+}
+
+.columns_row, .columns_d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.columns_column{
+    flex: 0 0 50%;
+    padding-bottom: 30px;
+}
+
+.columns_row, .columns_d-flex, .flex, .flex2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.columns_column1, .columns_column2{
+    flex: 0 0 calc(100% /3);
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.box{
+    background-image: url('../../assets/img/img3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 95%;
+}
+
+.box1, .box2, .box3,
+.box4, .box5, .box6{
+    background-image: url('../../assets/img/img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+}
+.box2{
+    background-image: url('../../assets/img/img2.jpg'); 
+}
+.box3{
+    background-image: url('../../assets/img/img4.jpg'); 
+}
+.box4{
+    background-image: url('../../assets/img/img5.jpg'); 
+}
+.box5{
+    background-image: url('../../assets/img/img6.jpg'); 
+}
+.box6{
+    background-image: url('../../assets/img/img7.jpg'); 
+}
+.footer{
+    background: lightgray;
+    height: 400px;
+    width: 95%;
+    margin: 0 auto;
+	padding: 50px 0;
+}
+
+@media(max-width: 436px){
+    .navDesktop{
+        display: none;
+    }
+
+    .flex, .flex2 {
+        flex:0 0 100%;
+    }
+    .columns_container{
+        width: 100%;
+    }
+}
+@media(min-width: 437px){
+    .navMobile{
+        display: none;
+    }
+}
